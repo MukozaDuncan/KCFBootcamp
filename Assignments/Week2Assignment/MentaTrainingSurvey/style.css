@@ -1,0 +1,75 @@
+body {
+    padding: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#heading-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#survey-form {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: left;
+    border: none;
+    background-color: rgb(16, 0, 53);
+    padding: 15px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-around;
+}
+
+#expectations {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+
+#submit {
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+}
+
+.multichoice {
+    display: flex;
+    flex-direction: column;
+}
+
+.formlabel {
+    color: white;
+}
+
+.input1 {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 30px;
+    background-color: white;
+    color: black;
+}
+
+.multichoicelabes {
+    font-size: 20px;
+}
+
+.spacing {
+    margin-top: 10px;
+}

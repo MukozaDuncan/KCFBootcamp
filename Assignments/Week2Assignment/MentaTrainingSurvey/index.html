@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menta Training Program Survey.</title>
+        <link rel="shortcut icon" href="images/logoimage.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="heading-content">
+            <img src="images/logoimage.png" alt="Menta Training Program" height="100px">
+            <div id="heading-text">
+                <h1 id="title">Training Program Survey Form.</h1>
+                <p id="description">Please fill in the fields below to take part in this survey.</p>
+            </div>
+        </div>
+        <form id="survey-form" method="POST">
+            <label for="name" id="name-label" class="spacing formlabel"><b>Name:</b></label>
+            <input type="text" id="name" class="input1 spacing" placeholder="Please enter your name." required>
+
+            <label for="email" id="email-label" class="spacing formlabel"><b>Email Address:</b></label>
+            <input type="email" id="email" class="input1 spacing" placeholder="Please enter your email address." required>
+
+            <label for="number" id="number-label" class="spacing formlabel"><b>Age:</b></label>
+            <input type="number" id="number" class="input1 spacing" min="15" max="30" placeholder="Please enter your age which must be in the range of 15 to 30." required>
+
+            <div id="options">
+                <div id="radiobuttons" class="multichoice">
+                    <p class="multichoicelabes formlabel"><b>Gender</b></p>
+                    <div>
+                        <label for="male" id="male-label" class="formlabel"><b>Male:</b></label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                    </div>
+
+                    <div>
+                        <label for="female" id="female-label" class="formlabel"><b>Female:</b></label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                    </div>
+                </div>
+
+                <div id="checkboxes" class="multichoice">
+                    <p class="multichoicelabes formlabel"><b>Interests</b></p>
+                    <div>
+                        <label for="ict" id="ict-label" class="formlabel"><b>ICT:</b></label>
+                        <input type="checkbox" id="ict" name="ict" value="ICT">
+                    </div>
+
+                    <div>
+                        <label for="mdd" id="mdd-label" class="formlabel"><b>MDD:</b></label>
+                        <input type="checkbox" id="mdd" name="mdd" value="MDD">
+                    </div>
+
+                    <div>
+                        <label for="poetry" id="poetry-label" class="formlabel"><b>Poetry:</b></label>
+                        <input type="checkbox" id="poetry" name="poetry" value="Poetry">
+                    </div>
+                </div>
+            </div>
+
+            <label for="expectations" id="expectations-label" class="spacing formlabel"><b>Expectations:</b></label>
+            <textarea id="expectations" class="spacing" name="expectations" rows="100" cols="30" placeholder="Please let us know of any of your expectations." required></textarea>
+
+            <input type="submit" id="submit" value="SUBMIT">
+        </form>
+    </body>
+</html>
